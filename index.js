@@ -6,8 +6,10 @@ import { AlbumsRoutes } from "./Routes/Albums/Albums.js";
 import { PhotosRoutes } from "./Routes/Photos/PhotosRoutes.js";
 import { TodosRoutes } from "./Routes/Todos/TodosRoutes.js";
 import { UserRoutes } from "./Routes/Users/UserRoutes.js";
+import cors from "cors";
 
 const app  = express();
+app.use(cors());
 dotenv.config();
 
 const PORT = process.env.PORT;
